@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: 'Mulish';
+}
+
+.primary-color {
+    color: #FF5400;
+}
+
+#primary-btn {
+    background-color: #FF5400;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* nav section styles */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.name img {
+    width: 20%;
+}
+
+.name h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+.name {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.title-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+/* banner section */
+
+.banner {
+    width: 600px;
+    text-align: center;
+}
+
+.img-banner img {
+    width: 800px;
+    position: relative;
+    top: 20px;
+    left: 250px;
+}
+
+.img-banner .banner {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+}
+
+.banner-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.dropdown {
+    color: gray;
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.banner input {
+    width: 120px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+#find {
+    background-color: #FF5400;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* main styles */
+
+/* popular Tour styles */
+
+.popular-container {
+    display: flex;
+    align-items: center;
+    padding: 30px 150px;
+    margin-top: 0px;
+}
+
+.description{
+    width: 500px;
+    margin-right: 60px;
+}
+.p-title {
+    color: #131318;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.p-description {
+    color: rgba(19, 19, 24, 0.7);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.popular-image img{
+    height: 400px;
+}
+
+@media screen and (max-width: 572px) {
+
+    .nav-bar,
+    .title-bar ul,
+    .popular-container
+     {
+        flex-direction: column;
+    }
+
+    .img-banner img,
+    .banner {
+        width: 410px;
+        height: 300px;
+        left: 0px;
+        text-align: center;
+    }
+
+    .banner {
+        width: 300px;
+        left: 10px;
+    }
+
+    .img-banner .banner {
+        top: 320px;
+        left: 70px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+    .description{
+        margin: 10px 0px;
+        width: 300px;
+    }
+}
